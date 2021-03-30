@@ -1,6 +1,7 @@
 import React from 'react';
 import './Checkout.css';
 import Subtotal from './Subtotal';
+import Basket from './Basket'
 
 function Checkout() {
     return (
@@ -17,6 +18,7 @@ function Checkout() {
                     </h2>
 
                     {/* backet items */}
+                    <Basket />
                     {/* backet items */}
                     {/* backet items */}
                     {/* backet items */}

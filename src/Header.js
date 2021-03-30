@@ -7,14 +7,7 @@ import { useStateValue } from './StateProvider'
 
 function Header() {
     const [{ basket}, dispatch ] = useStateValue()
-    console.log(basket)
-
-    const basketSum = (accumulator, a) => {
-        return accumulator + a;
-    }
-    // console.log(basket.map(val['price'].reduce(basketSum,0)))
-
-
+    
     return (
         <div className="header">
             <Link to="/">

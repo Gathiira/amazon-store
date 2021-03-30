@@ -4,7 +4,12 @@ import CurrencyFormat from 'react-currency-format'
 import { useStateValue } from './StateProvider';
 
 function Subtotal() {
-    const [{basket}, dispath] = useStateValue();
+    const [{basket}, dispatch] = useStateValue();
+    var total = 0
+
+    var newArr = basket.map(function(val, index){
+       return total += val['price']
+    })
 
     return (
         <div className="subtotal">
@@ -13,7 +18,7 @@ function Subtotal() {
                 (value) => (
                     <>
                         <p>
-                            Subtotal ({basket?.length} items): <strong>909</strong>
+                            Subtotal ({basket?.length} items): <strong>Ksh {total}</strong>
                         </p>
                         <small className="subtotal__gift">
                             <input type="checkbox" />
