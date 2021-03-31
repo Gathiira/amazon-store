@@ -13,19 +13,19 @@ function Home() {
                     <Product 
                     id= {1}
                     title="Macbook pro Air max 13.3 inches. Very clean" 
-                    price={1200} 
+                    price={1200.67} 
                     rating={4} 
                     image="https://images.unsplash.com/photo-1593642533144-3d62aa4783ec?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" />
                     <Product 
                     id= {1}
                     title="Macbook pro Air max 13.3 inches. Very clean" 
-                    price={1070} 
+                    price={1070.99} 
                     rating={4} 
                     image="https://images.unsplash.com/photo-1593642533144-3d62aa4783ec?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" />
                     <Product 
                     id= {1}
                     title="Macbook pro Air max 13.3 inches. Very clean" 
-                    price={1000} 
+                    price={1000.78} 
                     rating={4} 
                     image="https://images.unsplash.com/photo-1593642533144-3d62aa4783ec?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" />
                 </div>
@@ -33,7 +33,7 @@ function Home() {
                     <Product 
                     id= {1}
                     title="Macbook pro Air max 13.3 inches. Very clean" 
-                    price={1100} 
+                    price={1100.50} 
                     rating={4} 
                     image="https://images.unsplash.com/photo-1593642533144-3d62aa4783ec?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" />
                     <Product 
