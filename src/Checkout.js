@@ -20,7 +20,6 @@ function Checkout() {
                     <h2 className="checkout__title">
                         Your shopping Basket
                     </h2>
-
                     {
                         basket.map(item => (
                             <CheckoutProduct 
@@ -31,7 +30,7 @@ function Checkout() {
                             rating={item.rating}
                             />
                         ))
-                    }
+                    }                   
                 </div>
 
             </div>

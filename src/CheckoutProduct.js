@@ -1,6 +1,7 @@
 import React from 'react'
 import './CheckoutProduct.css'
 import { useStateValue } from './StateProvider'
+import FlipMove from 'react-flip-move';
 
 function CheckoutProduct({id, image, title, price, rating}) {
     const [{basket}, dispatch] = useStateValue();
@@ -13,26 +14,29 @@ function CheckoutProduct({id, image, title, price, rating}) {
     }
 
     return (
-        <div className="checkoutProduct">
-            <img className="checkoutProduct__image"
-            src={image} alt="" />
+        <FlipMove duration={750} easing="ease-out">
+            <div className="checkoutProduct">
+                <img className="checkoutProduct__image"
+                src={image} alt="" />
 
-            <div className="checkoutProduct__info">
-                <p className="checkoutProduct__title">{title}</p>
-                <p className="checkoutProduct__price">
-                    <small>Ksh</small>
-                    <strong>{price}</strong>                
-                </p>
-                <div className="checkoutProduct__rating">
-                    {
-                        Array(rating).fill().map((_,i)=>(
-                            <p key={i}>⭐</p>
-                        ))
-                    }
+                <div className="checkoutProduct__info">
+                    <p className="checkoutProduct__title">{title}</p>
+                    <p className="checkoutProduct__price">
+                        <small>Ksh</small>
+                        <strong>{price}</strong>                
+                    </p>
+                    <div className="checkoutProduct__rating">
+                        {
+                            Array(rating).fill().map((_,i)=>(
+                                <p key={i}>⭐</p>
+                            ))
+                        }
+                    </div>
+                    <button onClick={removeFromBasket}>Remove from Basket</button>
                 </div>
-                <button onClick={removeFromBasket}>Remove from Basket</button>
             </div>
-        </div>
+        </FlipMove>
+    
     )
 }
 
