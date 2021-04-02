@@ -7,7 +7,6 @@ function Product({id,title, image, price, rating}) {
 
     const addToBasket = () =>{
         // dispatch the irem into data layer
-        console.log("working");
         dispatch({
             type:"ADD_TO_BASKET",
             item: {
