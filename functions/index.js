@@ -15,22 +15,22 @@ app.use(express.json());
 
 // API root
 app.get("/", (request, response) => {
-    response.status(200).send("Hello world")
+  response.status(200).send("Hello world");
 });
 
 app.post("/payments/create", async (request, response) => {
-    const total = request.query.total;
-    console.log("payment total ", total)
+  const total = request.query.total;
+  console.log("payment total ", total);
 
-    const paymentIntent = await stripe.paymentIntents.create({
-        amount: total,
-        currency: "kes"
-    })
+  const paymentIntent = await stripe.paymentIntents.create({
+    amount: total,
+    currency: "kes",
+  });
 
-    response.status(201).send({
-        clientSecret: paymentIntent.client_secret
-    })
-})
+  response.status(201).send({
+    clientSecret: paymentIntent.client_secret,
+  });
+});
 
 
 // listen command
